@@ -16,7 +16,7 @@
     * **arduino** an [arduino](https://www.arduino.cc/) project. Tested with the [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html) board.
 * You **don't** need to clone the repo to use the driver and the examples. Just download the [CMSIS packs](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#2--download-the-packs) and install them with [STM32CubeMX](https://www.st.com/stm32cubemx). 
 
-* The [STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/I-CUBE-ExpressLink/STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack) pack comes the driver and the examples. Some examples depend on other CMSIS packs. The [list of the packs and links](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#2--download-the-packs) is provided below.
+* The [STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack) pack comes the driver and the examples. Some examples depend on other CMSIS packs. The [list of the packs and links](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#2--download-the-packs) is provided below.
 
 * The examples do not inlude the IDE project. Only the [STM32CubeMX](https://www.st.com/stm32cubemx) **.ioc** file is provided. The **main.c** file is provided for some projects.  [STM32CubeMX](https://www.st.com/stm32cubemx) will import all the necessary files for the project to build and run properly.
 
@@ -71,7 +71,7 @@
 
 
 ## 2- Download the packs
-* Download [STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/I-CUBE-ExpressLink/STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack)
+* Download [STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack)
 * Download [STMicroelectronics.I-CUBE-STDIO.1.5.0.pack](https://github.com/stm32-hotspot/I-CUBE-STDIO/blob/main/Pack/STMicroelectronics.I-CUBE-STDIO.1.5.0.pack?raw=true)
 * Download [AWS.coreJSON.4.0.0.pack](https://freertos-cmsis-packs.s3.us-west-2.amazonaws.com/AWS.coreJSON.4.0.0.pack)
 
