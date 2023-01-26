@@ -3,18 +3,17 @@
 ## Overview:
 * This is a CMSIS pack for [ExpressLink](https://aws.amazon.com/iot-expresslink/) driver for [STM32](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html) device. It allows you to create applications to connect to AWS IoT core using [ExpressLink modules](https://devices.amazonaws.com/search?page=1&sv=iotxplnk).
 
-* The pack contains a driver for ExpressLink modules and a set of **30** examples. 
+You **don't** need to clone the repo to use the driver and the examples. Just download the [CMSIS packs](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#2--download-the-packs) and install them with [STM32CubeMX](https://www.st.com/stm32cubemx). 
 
-    * **HelloWorld**: Provides a very basic example
-    * **PubSub**: Example on how to publish and subscribe to a topic and receive MQTT messages
-    * **Shadow**: Example on how to use the AWS Shadow messages
-    * **FreeRTOS**: A project that use the FreeRTOS and Shadow services. The example is offered only for the [32F769IDISCOVERY](https://www.st.com/en/evaluation-tools/32f769idiscovery.html) and [NUCLEO-WB55RG](https://www.st.com/en/evaluation-tools/nucleo-wb55rg.html) bords
-    * **PassThrough**: Passthrough to use a terminal to communicate with the module. Can be used to get the ExpressLink ceritificate and the Thing name
-    * **SensorData**: Send humidity and temperature from the HTS221 sensor present on the  [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html) board
-    * **MicroPython** Example using [MicroPython](http://www.micropython.org/). Offered only for the [NUCLEO-WB55RG](https://www.st.com/en/evaluation-tools/nucleo-wb55rg.html) board. Refer to the project's [readme.md](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/blob/main/Projects/MicroPython/readme.md) on how to use it
-    * **QuickConnect** Project + Binary + Python script to quickly connect the board to AWS. Offed for [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html) and [NUCLEO-G071RB](https://www.st.com/en/evaluation-tools/nucleo-h755zi-q.html).
-    * **arduino** an [arduino](https://www.arduino.cc/) project. Tested with the [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html) board.
-* You **don't** need to clone the repo to use the driver and the examples. Just download the [CMSIS packs](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#2--download-the-packs) and install them with [STM32CubeMX](https://www.st.com/stm32cubemx). 
+* The pack contains a driver for ExpressLink modules and a set of **30** examples. 
+     * **arduino** an [arduino](https://www.arduino.cc/) project. Tested with the [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html) board.
+     * **FreeRTOS**: A project that use the FreeRTOS and Shadow services. The example is offered only for the [32F769IDISCOVERY](https://www.st.com/en/evaluation-tools/32f769idiscovery.html) and [NUCLEO-WB55RG](https://www.st.com/en/evaluation-tools/nucleo-wb55rg.html) bords
+     * **HelloWorld**: Provides a very basic example
+     * **MicroPython** Example using [MicroPython](http://www.micropython.org/). Offered only for the [NUCLEO-WB55RG](https://www.st.com/en/evaluation-tools/nucleo-wb55rg.html) board. Refer to the project's readme.md on how to use it   
+     * **PassThrough**: Passthrough to use a terminal to communicate with the module. Can be used to get the ExpressLink ceritificate and the Thing name
+     * **PubSub**: Example on how to publish and subscribe to a topic and receive MQTT messages
+     * **QuickConnect** Project + Binary + Python script to quickly connect the board to AWS. Offed for [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html) and [NUCLEO-G071RB](https://www.st.com/en/evaluation-tools/nucleo-h755zi-q.html).
+     * **Shadow**: Example on how to use the AWS Shadow messages
 
 * The [STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/STMicroelectronics.I-CUBE-ExpressLink.0.2.0.pack) pack comes the driver and the examples. Some examples depend on other CMSIS packs. The [list of the packs and links](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#2--download-the-packs) is provided below.
 
@@ -40,7 +39,7 @@
 
 * You need to [register your ExpressLink module](https://github.com/espressif/esp-aws-expresslink-eval#6-registering-expresslink-to-your-development-account)  to your AWS account before running the project.
 
-* You can use the ***%HOMEPATH%\STM32Cube\Repository\Packs\STMicroelectronics\I-CUBE-ExpressLink\0.2.0\Projects\PassThrough*** to get the certificate and device name. Use **AT+CONF? Certificate pem** and **AT+CONF? ThingName**
+* You can use the ***PassThrough*** project to get the certificate and device name. Use **AT+CONF? Certificate pem** and **AT+CONF? ThingName**
 
 * Examples provided for the following boards:
     * [32F769IDISCOVERY](https://www.st.com/en/evaluation-tools/32f769idiscovery.html)
