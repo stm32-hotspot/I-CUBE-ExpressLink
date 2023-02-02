@@ -28,6 +28,7 @@
 * Very simple code
 * STM32CubeMX code configuration and project generation
 
+![With vs Without](./Resources/With_vs_Without.jpg)
 # How to use
 ## 1- Download and install tools
 * Doownload and Install [STM32CubeMX](https://www.st.com/stm32cubemx)
