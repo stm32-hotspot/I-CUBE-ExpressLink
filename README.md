@@ -31,7 +31,7 @@
 
 # How to use
 You can watch the video
-[![Watch the video](./Resources/ExpressLink_Video.bmp)](https://www.youtube.com/watch?v=QpDpoFM6qyA)
+[![Watch the video](./Resources/ExpressLink_Video.bmp)](https://youtu.be/UyM61afKBwg)
 
 ## 1- Download and install tools
 * Doownload and Install [STM32CubeMX](https://www.st.com/stm32cubemx)
