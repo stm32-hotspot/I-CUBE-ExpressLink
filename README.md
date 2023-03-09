@@ -1,11 +1,11 @@
-﻿# I-CUBE-ExpressLink
+# I-CUBE-ExpressLink
 
 # Overview:
 * This is a CMSIS pack for [ExpressLink](https://aws.amazon.com/iot-expresslink/) driver for [STM32](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html) devices. It allows you to create applications to connect to AWS IoT core using [ExpressLink modules](https://devices.amazonaws.com/search?page=1&sv=iotxplnk).
 
 * The driver is compatible with [AWS IoT ExpressLink Technical Specification v1.1](https://aws.amazon.com/about-aws/whats-new/2022/11/aws-iot-expresslink-technical-specification-v1-1-released/)
 
-* You **don't** need to clone the repo to use the driver and the examples. Just download the [CMSIS packs](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#2--download-the-packs) and install them with [STM32CubeMX](https://www.st.com/stm32cubemx). 
+* You **don't** need to clone the repo to use the driver and the examples. Just download the [CMSIS packs](https://github.com/SlimJallouli/I-CUBE-ExpressLink#2--download-the-packs) and install them with [STM32CubeMX](https://www.st.com/stm32cubemx). 
 
 * Examples provided for the following boards:
     * [32F769IDISCOVERY](https://www.st.com/en/evaluation-tools/32f769idiscovery.html)
@@ -28,23 +28,21 @@
 * Very simple code
 * STM32CubeMX code configuration and project generation
 
-
 # How to use
-You can watch the video
-[![Watch the video](./Resources/ExpressLink_Video.bmp)](https://youtu.be/UyM61afKBwg)
-
 ## 1- Download and install tools
 * Doownload and Install [STM32CubeMX](https://www.st.com/stm32cubemx)
 * Doownload and Install [STM32CubeIDE](https://www.st.com/stm32cubeide)
 * Doownload and Install [Tera Term](https://osdn.net/projects/ttssh2/downloads/74780/teraterm-4.106.exe/) (optional)
 
 ## 2- Download the packs
-* Download [STMicroelectronics.I-CUBE-ExpressLink.0.3.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/STMicroelectronics.I-CUBE-ExpressLink.0.3.0.pack)
+* Download [STMicroelectronics.I-CUBE-ExpressLink.0.4.0.pack](https://raw.githubusercontent.com/stm32-hotspot/I-CUBE-ExpressLink/main/STMicroelectronics.I-CUBE-ExpressLink.0.4.0.pack)
 * Download [STMicroelectronics.I-CUBE-STDIO.1.5.0.pack](https://github.com/stm32-hotspot/I-CUBE-STDIO/blob/main/Pack/STMicroelectronics.I-CUBE-STDIO.1.5.0.pack?raw=true)
 * Download [AWS.coreJSON.4.0.0.pack](https://freertos-cmsis-packs.s3.us-west-2.amazonaws.com/AWS.coreJSON.4.0.0.pack)
+* Download [ARM.CMSIS-FreeRTOS.10.4.6.pack](https://keilpack.azureedge.net/pack/ARM.CMSIS-FreeRTOS.10.4.6.pack)
+* Download [ARM.CMSIS.5.8.0.pack](https://keilpack.azureedge.net/pack/ARM.CMSIS.5.8.0.pack)
 
 ## 3- Install the packs with STM32CubeMX
-Install the **3** packs one by one as following. The order of installation doesn't matter
+Install the **5** packs one by one as following. The order of installation doesn't matter
 
 ![Install Remove](./Resources/Install_Pack_01.jpg)
 ![From local](./Resources/Install_Pack_02.jpg)
@@ -54,10 +52,12 @@ Install the **3** packs one by one as following. The order of installation doesn
 ## 4 Open the pack on your PC
 Copy the following path
 ```
-C:\Users\%USERNAME%\STM32Cube\Repository\Packs\STMicroelectronics\I-CUBE-ExpressLink\0.3.0\Projects
+C:\Users\%USERNAME%\STM32Cube\Repository\Packs\STMicroelectronics\I-CUBE-ExpressLink\0.4.0\Projects
 ```
 
-paste the link to the search ![bar](./Resources//OpenRepo.jpg)
+paste the link to the search bar
+
+![bar](./Resources//OpenRepo.jpg)
 
 
 Refere to the **README.md** for instructions on how to run the examples
