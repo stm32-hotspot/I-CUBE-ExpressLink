@@ -5,7 +5,7 @@
 
 * The driver is compatible with [AWS IoT ExpressLink Technical Specification v1.1](https://aws.amazon.com/about-aws/whats-new/2022/11/aws-iot-expresslink-technical-specification-v1-1-released/)
 
-* You **don't** need to clone the repo to use the driver and the examples. Just download the [CMSIS packs](https://github.com/SlimJallouli/I-CUBE-ExpressLink#2--download-the-packs) and install them with [STM32CubeMX](https://www.st.com/stm32cubemx). 
+* You **don't** need to clone the repo to use the driver and the examples. Just download the [CMSIS packs](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#2--download-the-packs) and install them with [STM32CubeMX](https://www.st.com/stm32cubemx). 
 
 * Examples provided for the following boards:
     * [32F769IDISCOVERY](https://www.st.com/en/evaluation-tools/32f769idiscovery.html)
