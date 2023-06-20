@@ -1,11 +1,15 @@
 ﻿# I-CUBE-ExpressLink
 
 ## 1- Overview
-* This is a CMSIS pack for [ExpressLink](https://aws.amazon.com/iot-expresslink/) driver for [STM32](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html) devices. It allows you to create applications to connect to AWS IoT core using [ExpressLink modules](https://devices.amazonaws.com/search?page=1&sv=iotxplnk) and to issue OTA (Over-The-Air) Updates.
 
-   * AWS offers the possibility to deploy Host OTA firmware updates on selected devices from your fleet that were previously connected to AWS. A Host OTA is using the **ExpressLink Module** as an intermidiary to update the board it is connected to, the "**host**". This allows to optmize the host performance : a larger payload can be transmitted along with optimized memory ressources utilisation for the host, and the heavy authenticity checks effort is transfered to the Express Link Module.
+*   **I-CUBE-ExpressLink** is a CMSIS pack for [ExpressLink](https://aws.amazon.com/iot-expresslink/) driver for [STM32](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html) devices. It allows you to create applications that **connects to AWS IoT Core** using [ExpressLink modules](https://devices.amazonaws.com/search?page=1&sv=iotxplnk) and to issue **Host Over-The-Air Updates**, in addition of **many other projects**.
 
-   * This package includes scripts that allows you to issue Host OTA in a more easy and user friendly way. It reduces the number of steps that have to be done and doesn't require you to be familiar with the AWS console.
+*   **Connecting your board to AWS : Quick Connect**\
+    Registers your board to AWS cloud service IoT Core automatically, and opens a serverless Dashboard that plots real time sensor data and controls LED using shadow messages.
+
+*   **Issue Host Over the Air updates (HOTA)**\
+    AWS offers the possibility to deploy Host OTA firmware updates on selected devices from your fleet that were previously connected to AWS. A Host OTA is using the **ExpressLink Module** as an intermidiary to update the board it is connected to, the "**host**". This allows to optmize the host performance : a larger payload can be transmitted along with optimized memory ressources utilisation for the host, and the heavy authenticity checks effort is transfered to the Express Link Module.
+    This package includes scripts that allows you to issue Host OTA in a more easy and user friendly way. It reduces the number of steps that have to be done and doesn't require you to be familiar with the AWS console.
 
 * The driver is compatible with [AWS IoT ExpressLink Technical Specification v1.1](https://aws.amazon.com/about-aws/whats-new/2022/11/aws-iot-expresslink-technical-specification-v1-1-released/).
 
@@ -13,6 +17,51 @@
 
 * You will need to connect your board to a Wifi that is at least 2.4 GHz.
 
+
+## 2- I-CUBE-ExpressLink Features
+
+* Very low code size
+* Compatible with all STM32 product familly
+* Zero code zero touch examples
+* Multiple examples
+* Very simple code
+* STM32CubeMX code configuration and project generation
+* 56 projects for 15 boards and 12 STM32 uC series
+* Projects generation with STM32CubeMX  no code/low code -> easy to port to any STM32 microcontrollers
+* Baremetal and FreeRTOS projects
+* Host OTA (HOTA), Shadow, PubSub, Sensor data, pass through
+* Pass through project can be used to get thing name, get thing cert, set HOTA cert and update the module using otw
+* Cellular support: FreeRTOS projects checks the module type (Wi-Fi or Cellular)
+* FreeRTOS projects enable defender (10 mn period)
+
+### **Quick Connect:** 
+
+   * Based on Python scripts
+   * Auto board detection/programming
+   * Issues detection/solution
+   * Device registration
+   * Device configuration
+   * Open dashboard
+   * Supported boards : B-L4S5I-IOT01A, B-L475E-IOT01A, B-U585I-IOT02A, NUCLEO-G0B1RE, NUCLEO-G071RB, NUCLEO-H503RB, NUCLEO-U575ZI-Q, NUCLEO-U545RE-Q, STM32L562E-DK, NUCLEO-WB55RG
+ 
+### **HOTA Updates:**
+
+* Based on Python scripts
+* The HOTA updates can be issued with the following boards :
+   * [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html)
+   * [NUCLEO-G0B1RE](https://www.st.com/en/evaluation-tools/nucleo-g0b1re.html) 
+   * [NUCLEO-U545RE-Q](https://www.st.com/en/evaluation-tools/nucleo-u545re-q.html)
+   * [NUCLEO-U575ZI-Q](https://www.st.com/en/evaluation-tools/nucleo-u575zi-q.html)
+   * [STM32L562E-DK](https://www.st.com/en/evaluation-tools/stm32l562e-dk.html)
+   * [NUCLEO-H503RB](https://www.st.com/en/evaluation-tools/nucleo-h503rb.html)
+
+### **Other projects:**
+
+* **Arduino projects:**
+   * Compatible with Arduino IDE
+   * Use Hardware Serial for ExpressLink.
+   * Use library from https://github.com/awslabs/aws-iot-expresslink-library-arduino
+* **MicroPython project (STM32WB)**
 * Examples provided for the following boards:
     * [32F769IDISCOVERY](https://www.st.com/en/evaluation-tools/32f769idiscovery.html)
     * [B-L4S5I-IOT01A](https://www.st.com/en/evaluation-tools/b-l4s5i-iot01a.html)
@@ -30,45 +79,6 @@
     * [NUCLEO-WL55JC](https://www.st.com/en/evaluation-tools/nucleo-wl55jc.html)
     * [STM32L562E-DK](https://www.st.com/en/evaluation-tools/stm32l562e-dk.html)
 
-* The HOTA updates can be issued with the following boards :
-   * [B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html)
-   * [NUCLEO-G0B1RE](https://www.st.com/en/evaluation-tools/nucleo-g0b1re.html) 
-   * [NUCLEO-U545RE-Q](https://www.st.com/en/evaluation-tools/nucleo-u545re-q.html)
-   * [NUCLEO-U575ZI-Q](https://www.st.com/en/evaluation-tools/nucleo-u575zi-q.html)
-   * [STM32L562E-DK](https://www.st.com/en/evaluation-tools/stm32l562e-dk.html)
-   * [NUCLEO-H503RB](https://www.st.com/en/evaluation-tools/nucleo-h503rb.html)
-
-* 56 projects for 15 boards and 12 STM32 uC series
-* Projects generation with STM32CubeMX  no code/low code -> easy to port to any STM32 microcontrollers
-* Baremetal and FreeRTOS projects
-* Host OTA (HOTA), Shadow, PubSub, Sensor data, pass through
-* HOTA support for STM32U5, STM32L5, STM32G0B and STM32H5
-* Pass through project can be used to get thing name, get thing cert, set HOTA cert and update the module using otw
-* Cellular support: FreeRTOS projects checks the module type (Wi-Fi or Cellular)
-* FreeRTOS projects enable defender (10 mn period)
-* Quick Connect script: 
-   * Python
-   * Support 10 boards
-   * Auto board detection/programming
-   * Issues detection/solution
-   * Device registration
-   * Device configuration
-   * Open dashboard
-* Serverless Dashboard: Plot sensor data and control LED using shadow messages
-* ota-script a python script that makes OTA jobs easy and fast
-* Arduino projects:
-   * Compatible with Arduino IDE
-   * Use Hardware Serial for ExpressLink.
-   * Use library from https://github.com/awslabs/aws-iot-expresslink-library-arduino
-* MicroPython project (STM32WB)
-
-## 2- Advantage of I-CUBE-ExpressLink
-* Very low code size
-* Compatible with all STM32 product familly
-* Zero code zero touch examples
-* Multiple examples
-* Very simple code
-* STM32CubeMX code configuration and project generation
 
 ## 3- How to use
 ### 3.1- Download and install tools
