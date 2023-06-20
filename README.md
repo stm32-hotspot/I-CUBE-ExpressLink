@@ -78,7 +78,7 @@
 * Download and Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 ### 3.2- Download the packs
-* Download [STMicroelectronics.I-CUBE-ExpressLink.0.5.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/I-CUBE-ExpressLink/STMicroelectronics.I-CUBE-ExpressLink.0.5.0.pack)
+* Download [STMicroelectronics.I-CUBE-ExpressLink.0.5.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/STMicroelectronics.I-CUBE-ExpressLink.0.5.0.pack)
 * Download [STMicroelectronics.I-CUBE-STDIO.1.5.0.pack](https://github.com/stm32-hotspot/I-CUBE-STDIO/blob/main/Pack/STMicroelectronics.I-CUBE-STDIO.1.5.0.pack?raw=true)
 * Download [AWS.coreJSON.4.0.0.pack](https://freertos-cmsis-packs.s3.us-west-2.amazonaws.com/AWS.coreJSON.4.0.0.pack)
 * Download [ARM.CMSIS-FreeRTOS.10.4.6.pack](https://keilpack.azureedge.net/pack/ARM.CMSIS-FreeRTOS.10.4.6.pack)
