@@ -144,7 +144,7 @@
 * Download and Install <a href="https://ttssh2.osdn.jp/index.html.en" target="_blank">Tera-Term</a> or preferred Serial Terminal Emulator or you can use an <a href="https://googlechromelabs.github.io/serial-terminal/" target="_blank">online serial emulator</a>
 
 ### 3.2- Download the CMSIS packs
-* Download [STMicroelectronics.I-CUBE-ExpressLink.1.0.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/I-CUBE-ExpressLink/STMicroelectronics.I-CUBE-ExpressLink.1.0.0.pack)
+* Download [STMicroelectronics.I-CUBE-ExpressLink.1.0.0.pack](https://github.com/stm32-hotspot/I-CUBE-ExpressLink/raw/main/STMicroelectronics.I-CUBE-ExpressLink.1.0.0.pack)
 * Download [STMicroelectronics.I-CUBE-STDIO.1.5.0.pack](https://github.com/stm32-hotspot/I-CUBE-STDIO/blob/main/Pack/STMicroelectronics.I-CUBE-STDIO.1.5.0.pack?raw=true)
 * Download [AWS.coreJSON.4.0.0.pack](https://freertos-cmsis-packs.s3.us-west-2.amazonaws.com/AWS.coreJSON.4.0.0.pack)
 * Download [ARM.CMSIS-FreeRTOS.10.4.6.pack](https://keilpack.azureedge.net/pack/ARM.CMSIS-FreeRTOS.10.4.6.pack)
