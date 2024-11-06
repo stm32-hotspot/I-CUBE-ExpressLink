@@ -12,8 +12,6 @@
 
 * The driver is compatible with <a href="https://aws.amazon.com/about-aws/whats-new/2022/11/aws-iot-expresslink-technical-specification-v1-1-released/" target="_blank">AWS IoT ExpressLink Technical Specification v1.1</a> or higher.
 
-* You **don't** need to clone the repo to use the driver and the examples. Just download the [CMSIS packs](https://github.com/stm32-hotspot/I-CUBE-ExpressLink#3--get-started) and install them with <a href="https://www.st.com/content/st_com/en/stm32cubemx.html" target="_blank">STM32CubeMX</a>. 
-
 * You will need to connect your board to a Wi-Fi that is at least 2.4 GHz.
 
 * The pack was tested with the following ExpresssLink Modules:
