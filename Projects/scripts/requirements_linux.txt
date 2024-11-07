@@ -1,0 +1,7 @@
+botocore==1.25.0
+boto3==1.22.0
+pyserial
+halo
+cryptography
+ecdsa
+pyopenssl
