@@ -16,7 +16,7 @@
 
 * The pack was tested with the following ExpresssLink Modules:
   * <a href="https://devices.amazonaws.com/detail/a3G0h00000E2JnNEAV/ESP32-C3-AWS-IoT-ExpressLink-Module" target="_blank">ESP32-C3</a> (Wi-Fi)
-  * <a href="https://devices.amazonaws.com/detail/a3G8W0000008011UAA/Bravo-LE910C1-WWXD-with-AWS-IoT-ExpressLink" target="_blank">Bravo-LE910C1-WWXDk</a> (Cellular)
+  * <a href="https://github.com/telit/bravo-aws-expresslink/blob/main/get-started-guide-bravo-aws.md" target="_blank">Bravo-LE910C1-WWXDk</a> (Cellular)
 
 
 ## 2- I-CUBE-ExpressLink Features
